@@ -14,20 +14,26 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="page">
     <!--_______________ Шапка_______________ -->
     <!-- <li><a class="link current" href="">Портфолио</a></li> -->
-    <header class="page-header">
+    <header class="page__header">
       <div class="container header">
-        <nav class="header-nav">
-          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-          <ul class="header-list">
-            <li><a class="link" href="./index.html">Студия</a></li>
-            <li><a class="link current" href="./index2.html">Портфолио</a></li>
-            <li><a class="link" href="">Контакты</a></li>
+        <nav class="header__nav">
+          <a class="logo" href="./index.html"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
+          <ul class="header__nav__list">
+            <li><a class="nav__link" href="./index.html">Студия</a></li>
+            <li>
+              <a class="nav__link nav__link--current" href="./index2.html"
+                >Портфолио</a
+              >
+            </li>
+            <li><a class="nav__link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <address class="header-address">
+        <address class="header__address">
           <a class="contacts" href="mailto:info@devstudio.com">
             <svg width="16" height="12">
               <use href="./images/symbol-defs.svg#icon-envelope"></use>
@@ -241,53 +247,59 @@
     </main>
     <!-- ________________Футер_________________________ -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-column">
-          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+      <div class="container container--footer">
+        <div class="footer__column">
+          <a class="logo" href="./index.html"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
           <address>
             <p class="footer__text">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="contacts" href="mailto:info@devstudio.com"
+            <a
+              class="contacts contacts--footer"
+              href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
-            <a class="contacts" href="call:+380961111111">+38 096 111 11 11</a>
+            <a class="contacts contacts--footer" href="call:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </address>
         </div>
-        <div class="footer-column">
-          <p class="h3 footer__text">Присоединяйтесь</p>
+        <div class="footer__column">
+          <p class="footer__title">Присоединяйтесь</p>
           <ul class="social-network-list">
             <li>
               <a class="social-network-item" href="#">
-                <svg class="social-network-logo">
+                <svg class="social-network-logo social-network-logo--footer">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="social-network-item" href="#">
-                <svg class="social-network-logo">
+                <svg class="social-network-logo social-network-logo--footer">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="social-network-item" href="#">
-                <svg class="social-network-logo">
+                <svg class="social-network-logo social-network-logo--footer">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="social-network-item" href="#">
-                <svg class="social-network-logo">
+                <svg class="social-network-logo social-network-logo--footer">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-column">
+        <div class="footer__column">
           <form class="footer-form-field">
-            <p class="h3 footer__text">
+            <p class="footer__title">
               <label for="email">
                 <span>Подпишитесь на рассылку</span>
               </label>
@@ -299,7 +311,7 @@
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               placeholder="E-mail"
             />
-            <button class="blue-button send" type="submit">
+            <button class="button button--send" type="submit">
               Подписаться
               <svg width="24" height="24" class="send-icon">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
